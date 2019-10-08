@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		26B7D6EE234CF6FB0004C7C7 /* MVDCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B7D6ED234CF6FB0004C7C7 /* MVDCharacter.m */; };
+		26B7D6F2234D07ED0004C7C7 /* MVDCharacterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B7D6F1234D07ED0004C7C7 /* MVDCharacterController.m */; };
+		26B7D6F6234D2DB30004C7C7 /* MVDTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B7D6F5234D2DB30004C7C7 /* MVDTableViewController.swift */; };
+		26B7D6F8234D2E870004C7C7 /* MVDCharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B7D6F7234D2E870004C7C7 /* MVDCharacterTableViewCell.swift */; };
 		FBEEBC5A234C3E6300A6D563 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEEBC59234C3E6300A6D563 /* AppDelegate.m */; };
 		FBEEBC5D234C3E6300A6D563 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEEBC5C234C3E6300A6D563 /* SceneDelegate.m */; };
 		FBEEBC63234C3E6300A6D563 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBEEBC61234C3E6300A6D563 /* Main.storyboard */; };
@@ -19,6 +22,11 @@
 /* Begin PBXFileReference section */
 		26B7D6EC234CF6FB0004C7C7 /* MVDCharacter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVDCharacter.h; sourceTree = "<group>"; };
 		26B7D6ED234CF6FB0004C7C7 /* MVDCharacter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVDCharacter.m; sourceTree = "<group>"; };
+		26B7D6F0234D07ED0004C7C7 /* MVDCharacterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVDCharacterController.h; sourceTree = "<group>"; };
+		26B7D6F1234D07ED0004C7C7 /* MVDCharacterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVDCharacterController.m; sourceTree = "<group>"; };
+		26B7D6F4234D2DB30004C7C7 /* Hogwarts-C-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hogwarts-C-Bridging-Header.h"; sourceTree = "<group>"; };
+		26B7D6F5234D2DB30004C7C7 /* MVDTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVDTableViewController.swift; sourceTree = "<group>"; };
+		26B7D6F7234D2E870004C7C7 /* MVDCharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVDCharacterTableViewCell.swift; sourceTree = "<group>"; };
 		FBEEBC55234C3E6300A6D563 /* Hogwarts-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hogwarts-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBEEBC58234C3E6300A6D563 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FBEEBC59234C3E6300A6D563 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,8 +62,29 @@
 		26B7D6EB234CF6A00004C7C7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				26B7D6F3234D1B6A0004C7C7 /* ViewController */,
+				26B7D6EF234D07C30004C7C7 /* ModelController */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		26B7D6EF234D07C30004C7C7 /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				26B7D6F0234D07ED0004C7C7 /* MVDCharacterController.h */,
+				26B7D6F1234D07ED0004C7C7 /* MVDCharacterController.m */,
+			);
+			path = ModelController;
+			sourceTree = "<group>";
+		};
+		26B7D6F3234D1B6A0004C7C7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				26B7D6F5234D2DB30004C7C7 /* MVDTableViewController.swift */,
+				26B7D6F4234D2DB30004C7C7 /* Hogwarts-C-Bridging-Header.h */,
+				26B7D6F7234D2E870004C7C7 /* MVDCharacterTableViewCell.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		FBAE9AD4234C3F2300B8DAC9 /* Storyboards */ = {
@@ -140,6 +169,7 @@
 				TargetAttributes = {
 					FBEEBC54234C3E6300A6D563 = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 				};
 			};
@@ -181,8 +211,11 @@
 			files = (
 				FBEEBC5A234C3E6300A6D563 /* AppDelegate.m in Sources */,
 				26B7D6EE234CF6FB0004C7C7 /* MVDCharacter.m in Sources */,
+				26B7D6F2234D07ED0004C7C7 /* MVDCharacterController.m in Sources */,
 				FBEEBC6B234C3E6500A6D563 /* main.m in Sources */,
 				FBEEBC5D234C3E6300A6D563 /* SceneDelegate.m in Sources */,
+				26B7D6F8234D2E870004C7C7 /* MVDCharacterTableViewCell.swift in Sources */,
+				26B7D6F6234D2DB30004C7C7 /* MVDTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +355,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4J7B9732LY;
 				INFOPLIST_FILE = "$(SRCROOT)/Hogwarts-C/Supporting Files/Info.plist";
@@ -331,6 +365,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.DevMountain.Hogwarts-C";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Hogwarts-C/Controllers/ViewController/Hogwarts-C-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -339,6 +376,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4J7B9732LY;
 				INFOPLIST_FILE = "$(SRCROOT)/Hogwarts-C/Supporting Files/Info.plist";
@@ -348,6 +386,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.DevMountain.Hogwarts-C";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Hogwarts-C/Controllers/ViewController/Hogwarts-C-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
