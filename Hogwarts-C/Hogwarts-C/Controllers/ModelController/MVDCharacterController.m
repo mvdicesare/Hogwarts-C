@@ -61,8 +61,6 @@ static NSString * const characterString = @"characters";
         if (response)
         {
             NSLog(@"%@", response);
-            completion(nil);
-            return;
         }
         if (data)
         {

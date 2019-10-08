@@ -19,6 +19,9 @@ class MVDCharacterTableViewCell: UITableViewCell {
     
     
     func updateViews(with character: MVDCharacter?) {
+        deathEaterImage.isHidden = true
+        houseImage.isHidden = true
+        bloodStatus.isHidden = true 
      
         
         guard let character = character else {return}
